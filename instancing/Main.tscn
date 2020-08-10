@@ -1,0 +1,207 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Bouncy Platform Long.png" type="Texture" id=3]
+[ext_resource path="res://SayHello.gd" type="Script" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+
+[sub_resource type="PhysicsMaterial" id=1]
+bounce = 0.5
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 28.7617
+height = 253.621
+
+[sub_resource type="PhysicsMaterial" id=3]
+bounce = 0.5
+
+[sub_resource type="PhysicsMaterial" id=4]
+bounce = 0.5
+
+[sub_resource type="PhysicsMaterial" id=5]
+bounce = 0.5
+
+[sub_resource type="PhysicsMaterial" id=6]
+bounce = 0.5
+
+[sub_resource type="PhysicsMaterial" id=7]
+bounce = 0.5
+
+[sub_resource type="PhysicsMaterial" id=8]
+bounce = 0.5
+
+[sub_resource type="PhysicsMaterial" id=9]
+bounce = 0.5
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+Ball = ExtResource( 2 )
+
+[node name="WallContainer" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Wall2" type="StaticBody2D" parent="WallContainer"]
+position = Vector2( 907.952, 441.157 )
+rotation = -0.264907
+physics_material_override = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall2"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall2"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall7" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 645.444, 171.865 )
+rotation = -1.02983
+physics_material_override = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall7"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall7"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall8" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 814.534, 178.147 )
+rotation = 1.07416
+physics_material_override = SubResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall8"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall8"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall4" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 1022.87, 160.897 )
+rotation = -1.5708
+physics_material_override = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall4"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall4"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall1" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 562.047, 440.522 )
+rotation = 0.315662
+physics_material_override = SubResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall1"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall1"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall5" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 461.209, 168.685 )
+rotation = 1.5708
+physics_material_override = SubResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall5"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall5"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall3" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 721.133, 582.384 )
+physics_material_override = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall3"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall3"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall6" type="StaticBody2D" parent="WallContainer"]
+editor/display_folded = true
+position = Vector2( 729.667, 331.226 )
+physics_material_override = SubResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall6"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall6"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+position = Vector2( 728, 244 )
+
+[node name="Ball2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 564, 9 )
+
+[node name="Ball3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 61, 94 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 654.848
+margin_top = 426.428
+margin_right = 860.848
+margin_bottom = 583.428
+script = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="Panel"]
+margin_left = 44.0085
+margin_top = 60.497
+margin_right = 155.008
+margin_bottom = 131.497
+text = "OK Boomer"
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 6.34631
+margin_top = 12.0292
+margin_right = 200.346
+margin_bottom = 43.0292
+text = "this is a label it does the thing
+"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 593.674, 256.598 )
+texture = ExtResource( 5 )
+[connection signal="pressed" from="Panel/Button" to="Panel" method="_on_Button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

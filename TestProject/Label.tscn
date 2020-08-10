@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Label" type="Label"]
+anchor_right = 0.61
+margin_left = 95.5741
+margin_top = 27.4586
+margin_right = 531.934
+margin_bottom = 678.459
+text = "Hello World!
+
+xd"
+align = 1
+valign = 1
