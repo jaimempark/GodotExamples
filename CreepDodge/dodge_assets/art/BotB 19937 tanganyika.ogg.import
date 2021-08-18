@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/BotB 19937 tanganyika.ogg-63314d2c79308f208c81dafec9fb7f1f.oggstr"
+
+[deps]
+
+source_file="res://dodge_assets/art/BotB 19937 tanganyika.ogg"
+dest_files=[ "res://.import/BotB 19937 tanganyika.ogg-63314d2c79308f208c81dafec9fb7f1f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

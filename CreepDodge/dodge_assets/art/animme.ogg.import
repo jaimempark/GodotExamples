@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/animme.ogg-cb866df14f4451cedda5e8f4577fc58a.oggstr"
+
+[deps]
+
+source_file="res://dodge_assets/art/animme.ogg"
+dest_files=[ "res://.import/animme.ogg-cb866df14f4451cedda5e8f4577fc58a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
